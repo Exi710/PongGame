@@ -89,7 +89,7 @@ class   Ball:
 class Paddle:
 
     def addSpeed(self):
-        self.moveX = self.moveX + 2.5
+        self.moveX = self.moveX + 5
 
     
     def __init__(self, canvas, color):
@@ -214,7 +214,7 @@ class PongGame:
                 self.score = 0
                 if self.deleteMessage == True:
                     self.canvas.delete(self.scoreMessageId)
-                    self.deleteMessege = False
+                    self.deleteMessage = False
                 break
             else:
                 self.textId = self.canvas.create_text(self.canvas_width / 2 + 5, self.canvas_height / 3, text='YOU WON! :)', fill='green', font=('Times', 20, 'bold'))
